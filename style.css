@@ -1,0 +1,103 @@
+:root{
+    --fonte-principal: 'Inter', sons-serif;
+    --cor-cinza-texto: #667085;
+    --cor-vermelho: #8E2424;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fonte-principal);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+  
+.links a {
+    color: var(--cor-cinza-texto);
+    text-decoration: none;
+    margin-right: 2rem;
+    font-family: var(--fonte-principal);
+}
+  
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--cor-cinza-texto);
+    font-size: 0.9rem;
+}
+  
+button#signUp {
+    background-color: var(--cor-vermelho);
+    color: #FFF;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    text-align: center;
+}
+
+header h3{
+    color: var(--cor-vermelho);
+    font-weight: 600;
+}
+
+.cabecalho__titulo{
+    font-size: 48px;
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.cabecalho__descricao{
+    color: var(--cor-cinza-texto);
+    font-weight: 400;
+}
+
+main{
+    padding: 0 0 4em 0;
+}
+
+.metricas{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 4em;
+}
+
+.metricas li{
+    padding: 1em 1em;
+    width: 50%;
+}
+
+.metricas h2{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--cor-vermelho);
+    padding-bottom: 0.3em;
+}
+
+.metricas h5{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+
+.metricas p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-cinza-texto);
+}

@@ -90,7 +90,7 @@ main{
     padding-bottom: 0.3em;
 }
 
-.metricas h5{
+.metricas h3{
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 1em;
@@ -99,5 +99,75 @@ main{
 .metricas p{
     font-size: 16px;
     font-weight: 400;
+    color: var(--cor-cinza-texto);
+}
+
+.talentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    gap: 64px;
+}
+
+.badge{
+    border: 1px solid transparent;
+    background-color: rgba(142, 36, 36, 0.05);
+    color: var(--cor-vermelho);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.talentos h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.talentos p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cor-cinza-texto);
+}
+
+.foto__candidatos{
+    width: 100%;
+}
+
+.vagas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 940px;
+    gap: 30px;
+}
+
+.vagas li{
+    border: 1px solid #EAECF0;
+    border-radius: 15px;
+    width: auto;
+    padding: 2em;
+    padding-right: 15em;
+}
+
+.vagas__titulo, .vagas__abertas__titulo{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.vagas__abertas__titulo{
+    padding-bottom: 1.5em;
+}
+
+.vagas__design, .vagas__desenvolvimento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.vagas__design p, .vagas__desenvolvimento p{
+    display: inline;
+    padding-right: 20px;
     color: var(--cor-cinza-texto);
 }

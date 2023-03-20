@@ -115,6 +115,7 @@ main{
     background-color: rgba(142, 36, 36, 0.05);
     color: var(--cor-vermelho);
     border-radius: 20px;
+    padding: 0.5em 1em;
     font-size: 14px;
     font-weight: 500;
 }
@@ -169,5 +170,40 @@ main{
 .vagas__design p, .vagas__desenvolvimento p{
     display: inline;
     padding-right: 20px;
+    color: var(--cor-cinza-texto);
+}
+
+.depoimentos{
+    border: 1px solid transparent;
+    background-color: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+    margin: 0 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 32px;
+}
+
+.depoimentos p{
+    color: var(--cor-vermelho);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.depoimentos h2{
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.depoimentos__nome{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.depoimentos__cargo{
+    font-size: 14px;
+    font-weight: 400;
     color: var(--cor-cinza-texto);
 }

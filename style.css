@@ -58,7 +58,7 @@ header h3{
 }
 
 .cabecalho__titulo{
-    font-size: 48px;
+    font-size: 3em;
     font-weight: 600;
     padding: 0.5em;
 }
@@ -84,20 +84,20 @@ main{
 }
 
 .metricas h2{
-    font-size: 60px;
+    font-size: 4em;
     font-weight: 600;
     color: var(--cor-vermelho);
     padding-bottom: 0.3em;
 }
 
 .metricas h3{
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 500;
     padding-bottom: 1em;
 }
 
 .metricas p{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     color: var(--cor-cinza-texto);
 }
@@ -107,7 +107,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 3em;
-    gap: 64px;
+    gap: 4em;
 }
 
 .badge{
@@ -116,17 +116,17 @@ main{
     color: var(--cor-vermelho);
     border-radius: 20px;
     padding: 0.5em 1em;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 500;
 }
 
 .talentos h2{
-    font-size: 36px;
+    font-size: 2em;
     font-weight: 600;
 }
 
 .talentos p{
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 400;
     color: var(--cor-cinza-texto);
 }
@@ -152,7 +152,7 @@ main{
 }
 
 .vagas__titulo, .vagas__abertas__titulo{
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 500;
 }
 
@@ -187,23 +187,143 @@ main{
 
 .depoimentos p{
     color: var(--cor-vermelho);
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
 }
 
 .depoimentos h2{
-    font-size: 36px;
+    font-size: 2em;
     font-weight: 500;
     text-align: center;
 }
 
 .depoimentos__nome{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
 }
 
 .depoimentos__cargo{
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: 400;
     color: var(--cor-cinza-texto);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+    gap: 32px;
+    background-color: #F9FAFB;
+}
+
+footer h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+footer span{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--cor-cinza-texto);
+}
+
+.formulario{
+    width: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #D0D5DD;
+    margin-right: 1em;
+}
+
+.copyright{
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 740px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 22px;
+    }
+
+    .metricas{
+        flex-wrap: wrap;
+    }
+
+    .metricas li{
+        padding: 1em 1em;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 395px){
+    header{
+        padding: 1em;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+    
+    .links a {
+        text-align: center;
+        margin-right: 1em;
+    }
+
+    .metricas{
+        display: block;
+        margin: 1em 2em;
+    }
+
+    .metricas li{
+        width: 100%;
+    }
+
+    .talentos{
+        gap: 2em;
+    }
+
+    .vagas{
+        height: auto;
+    }
+
+    .vagas li {
+        padding-right: 0;
+        padding: 1em;
+    }
+
+    .vagas__design, .vagas__desenvolvimento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .depoimentos{
+        margin: 0 1em;
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    .depoimentos h2{
+        font-size: 1em;
+    }
+
+    .avatar{
+        width: 50%;
+    }
+
+    footer{
+        padding: 1em 1em;
+        gap: 1em;
+        text-align: center;
+    }
+
+    .formulario{
+        width: auto;
+    }
+
 }
